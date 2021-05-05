@@ -18,5 +18,5 @@ public class DeckOfCards : MonoBehaviour
         }
     }
 
-    public void shuffle()
+   // public void shuffle()
 }
