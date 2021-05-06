@@ -18,5 +18,12 @@ public class DeckOfCards : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
    // public void shuffle()
+=======
+    public void shuffle()
+    {
+
+    }
+>>>>>>> d3cb323cfc39fbb816784388e0aa15e279b967cf
 }
