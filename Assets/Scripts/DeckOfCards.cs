@@ -9,9 +9,9 @@ public class DeckOfCards : MonoBehaviour
 
     public DeckOfCards()
     {
-        foreach(Card.eSuit suit in Enum.GetValues(typeof(Card.eSuit)))
+        foreach (Card.eSuit suit in Enum.GetValues(typeof(Card.eSuit)))
         {
-            for(int i = 1; i < 14; i++)
+            for (int i = 1; i < 14; i++)
             {
                 cards.Add(new Card(i, suit));
             }
@@ -22,3 +22,4 @@ public class DeckOfCards : MonoBehaviour
 
     }
 }
+
