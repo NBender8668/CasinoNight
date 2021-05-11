@@ -5,7 +5,7 @@ using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class GameController : MonoBehaviour
+public class MenuGameController : MonoBehaviour
 {
     public GameObject titleScreen;
     public GameObject optionScreen;
@@ -15,8 +15,8 @@ public class GameController : MonoBehaviour
     bool isPaused = false;
     float timeScale;
 
-    static GameController instance = null;
-    public static GameController Instance
+    static MenuGameController instance = null;
+    public static MenuGameController Instance
     {
         get { return instance; }
     }
