@@ -13,7 +13,7 @@ public class Row : MonoBehaviour
     private void Start()
     {
         rowStopped = true;
-        GameController.HandlePulled += StartRotating;
+        SlotsController.HandlePulled += StartRotating;
     }
 
     private void StartRotating()
@@ -67,20 +67,20 @@ public class Row : MonoBehaviour
         }
 
         if (transform.position.y == -3.5f)
-            stoppedSlot = "Diamond";
-        else if (transform.position.y == -2.75f)
-            stoppedSlot = "Crown";
-        else if (transform.position.y == -2f)
-            stoppedSlot = "Melon";
+            stoppedSlot = "Bar";
         else if (transform.position.y == -1.75f)
-            stoppedSlot = "Crown";
-        else if (transform.position.y == -0.5f)
             stoppedSlot = "Seven";
-        else if (transform.position.y == 0.25f)
+        else if (transform.position.y == -9f)
+            stoppedSlot = "Diamond";
+        else if (transform.position.y == -7f)
+            stoppedSlot = "Crown";
+        else if (transform.position.y == -5.4f)
+            stoppedSlot = "Melon";
+        else if (transform.position.y == 0f)
             stoppedSlot = "Cherry";
-        else if (transform.position.y == 1f)
+        else if (transform.position.y == 2f)
             stoppedSlot = "Lemon";
-        else if (transform.position.y == 1.75f)
+        else if (transform.position.y == 3.75f)
             stoppedSlot = "Diamond";
 
         rowStopped = true;
@@ -88,6 +88,6 @@ public class Row : MonoBehaviour
 
     private void OnDestroy()
     {
-        GameController.HandlePulled -= StartRotating;
+        SlotsController.HandlePulled -= StartRotating;
     }
 }
