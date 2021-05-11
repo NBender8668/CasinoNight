@@ -10,10 +10,9 @@ public class GameController : MonoBehaviour
     public GameObject titleScreen;
     public GameObject optionScreen;
     public GameObject pauseScreen;
-    
+
 
     bool isPaused = false;
-    bool isDead = false;
     float timeScale;
 
     static GameController instance = null;
