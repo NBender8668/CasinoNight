@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class MenuGameController : MonoBehaviour
 {
     public GameObject titleScreen;
-    public GameObject optionScreen;
+    //public GameObject optionScreen;
     public GameObject pauseScreen;
 
 
@@ -76,13 +76,13 @@ public class MenuGameController : MonoBehaviour
     public void OnTitleScreen()
     {
         titleScreen.SetActive(true);
-        optionScreen.SetActive(false);
+       // optionScreen.SetActive(false);
     }
 
     public void OnOptionScreen()
     {
         titleScreen.SetActive(false);
-        optionScreen.SetActive(true);
+        //optionScreen.SetActive(true);
     }
 
     public void OnPauseScreen()
