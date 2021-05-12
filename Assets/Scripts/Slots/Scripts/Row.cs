@@ -50,7 +50,7 @@ public class Row : MonoBehaviour
 
         for (int i = 0; i < randomValue; i++)
         {
-            if (transform.position.y <= -3.5f)
+            if (transform.position.y <= -9f)
                 transform.position = new Vector2(transform.position.x, 1.75f);
             transform.position = new Vector2(transform.position.x, transform.position.y - 0.25f);
 
@@ -67,20 +67,20 @@ public class Row : MonoBehaviour
         }
 
         if (transform.position.y == -3.5f)
+            stoppedSlot = "Diamond";
+        else if (transform.position.y == -2.75f)
+            stoppedSlot = "Crown";
+        else if (transform.position.y == -2f)
+            stoppedSlot = "Melon";
+        else if (transform.position.y == -3.5f)
             stoppedSlot = "Bar";
         else if (transform.position.y == -1.75f)
             stoppedSlot = "Seven";
-        else if (transform.position.y == -9f)
-            stoppedSlot = "Diamond";
-        else if (transform.position.y == -7f)
-            stoppedSlot = "Crown";
-        else if (transform.position.y == -5.4f)
-            stoppedSlot = "Melon";
-        else if (transform.position.y == 0f)
+        else if (transform.position.y == 0.25f)
             stoppedSlot = "Cherry";
         else if (transform.position.y == 2f)
             stoppedSlot = "Lemon";
-        else if (transform.position.y == 3.75f)
+        else if (transform.position.y == 3.5f)
             stoppedSlot = "Diamond";
 
         rowStopped = true;
