@@ -50,9 +50,18 @@ public class BlackJackDeck : MonoBehaviour
         }
     }
 
-    public int DealCard()//CardScript cardScript)
+    public int DealCard(CardScript cardScript)//CardScript cardScript)
     {
+        cardScript.SetSprite(cardSprites[currentIndex]);
         //cardScript.SetSprite
-        return 0;
+
+        cardScript.SetValue(cardValues[currentIndex]);
+        currentIndex++;
+        return cardScript.GetValueOfCard();
+    }
+
+    public Sprite GetCardBack()
+    {
+        return cardSprites[0];
     }
 }
