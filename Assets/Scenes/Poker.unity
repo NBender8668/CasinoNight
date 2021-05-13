@@ -1783,6 +1783,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1369573552}
   - component: {fileID: 1369573551}
+  - component: {fileID: 1369573553}
   m_Layer: 0
   m_Name: Dealer
   m_TagString: Untagged
@@ -1802,11 +1803,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80dab3389b9f51c47818be5f8f2d38e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardOne: {fileID: 1080495801}
-  cardTwo: {fileID: 1933612547}
-  cardThree: {fileID: 114857698}
-  cardFour: {fileID: 1954484479}
-  cardFive: {fileID: 1378347561}
+  cardOneBtn: {fileID: 1080495801}
+  cardTwoBtn: {fileID: 1933612547}
+  cardThreeBtn: {fileID: 114857698}
+  cardFourBtn: {fileID: 1954484479}
+  cardFiveBtn: {fileID: 1378347561}
+  cardOne: {fileID: 0}
+  cardTwo: {fileID: 0}
+  cardThree: {fileID: 0}
+  cardFour: {fileID: 0}
+  cardFive: {fileID: 0}
 --- !u!4 &1369573552
 Transform:
   m_ObjectHideFlags: 0
@@ -1821,6 +1827,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1369573553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369573550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42d0e42061ce88847b3366e643343be9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1378347560
 GameObject:
   m_ObjectHideFlags: 0

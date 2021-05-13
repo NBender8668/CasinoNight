@@ -12,45 +12,51 @@ public class DealingCards : MonoBehaviour
     public Button cardFourBtn;
     public Button cardFiveBtn;
 
-    private DeckOfCards deck;
+    public List<Card> cards = new List<Card>();
 
-    private Card cardOne;
-    private Card cardTwo;
-    private Card cardThree;
-    private Card cardFour;
-    private Card cardFive;
-
+    private DeckOfCards deck = new DeckOfCards();
 
     public void DealCards()
     {
         deck.shuffle();
-        int numOfRandom = 0;
 
-        System.Random randomCard = new System.Random();
+        Card cardOne;
+        Card cardTwo;
+        Card cardThree;
+        Card cardFour;
+        Card cardFive;
+
+    System.Random randomCard = new System.Random();
         System.Random randomCard2 = new System.Random();
         System.Random randomCard3 = new System.Random();
         System.Random randomCard4 = new System.Random();
         System.Random randomCard5 = new System.Random();
 
         int indexForCardOne = randomCard.Next(deck.cards.Count);
+        cardOne = deck.cards[indexForCardOne];
         deck.cards.Remove(deck.cards[indexForCardOne]);
 
-        int indexForCardTwo = randomCard.Next(deck.cards.Count);
+        int indexForCardTwo = randomCard2.Next(deck.cards.Count);
+        cardTwo = deck.cards[indexForCardTwo];
         deck.cards.Remove(deck.cards[indexForCardTwo]);
 
-        int indexForCardThree = randomCard.Next(deck.cards.Count);
+        int indexForCardThree = randomCard3.Next(deck.cards.Count);
+        cardThree = deck.cards[indexForCardThree];
         deck.cards.Remove(deck.cards[indexForCardThree]);
 
-        int indexForCardFour = randomCard.Next(deck.cards.Count);
+        int indexForCardFour = randomCard4.Next(deck.cards.Count);
+        cardFour = deck.cards[indexForCardFour];
         deck.cards.Remove(deck.cards[indexForCardFour]);
 
-        int indexForCardFive = randomCard.Next(deck.cards.Count);
+        int indexForCardFive = randomCard5.Next(deck.cards.Count);
+        cardFive = deck.cards[indexForCardFive];
         deck.cards.Remove(deck.cards[indexForCardFive]);
 
-        cardOne = deck.cards[indexForCardOne];
-        cardTwo = deck.cards[indexForCardTwo];
-        cardThree = deck.cards[indexForCardThree];
-        cardFour = deck.cards[indexForCardFour];
-        cardFive = deck.cards[indexForCardFive];
+        cards.Add(cardOne);
+        cards.Add(cardTwo);
+        cards.Add(cardThree);
+        cards.Add(cardFour);
+        cards.Add(cardFive);
+
     }
 }
