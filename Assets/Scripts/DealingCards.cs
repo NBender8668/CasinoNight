@@ -12,9 +12,15 @@ public class DealingCards : MonoBehaviour
     public Button cardFourBtn;
     public Button cardFiveBtn;
 
-    public List<Card> cards = new List<Card>();
+    DeckOfCards deck;
 
-    private DeckOfCards deck = new DeckOfCards();
+    public List<Card> cards = new List<Card>();
+    public void Start()
+    {
+        deck = GetComponent<DeckOfCards>();
+        
+    }
+
 
     public void DealCards()
     {
@@ -26,7 +32,7 @@ public class DealingCards : MonoBehaviour
         Card cardFour;
         Card cardFive;
 
-    System.Random randomCard = new System.Random();
+        System.Random randomCard = new System.Random();
         System.Random randomCard2 = new System.Random();
         System.Random randomCard3 = new System.Random();
         System.Random randomCard4 = new System.Random();
