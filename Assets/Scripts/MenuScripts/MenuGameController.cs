@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class MenuGameController : MonoBehaviour
 {
     public GameObject titleScreen;
-    public GameObject optionScreen;
+    //public GameObject optionScreen;
     public GameObject pauseScreen;
 
 
@@ -40,8 +40,6 @@ public class MenuGameController : MonoBehaviour
     public void OnLoadGameScene(string sceneName)
     {
         titleScreen.SetActive(false);
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
 
         //StartCoroutine(LoadGameScene(sceneName));
         SceneManager.LoadScene(sceneName);
@@ -76,13 +74,13 @@ public class MenuGameController : MonoBehaviour
     public void OnTitleScreen()
     {
         titleScreen.SetActive(true);
-        optionScreen.SetActive(false);
+       // optionScreen.SetActive(false);
     }
 
     public void OnOptionScreen()
     {
         titleScreen.SetActive(false);
-        optionScreen.SetActive(true);
+        //optionScreen.SetActive(true);
     }
 
     public void OnPauseScreen()
@@ -93,8 +91,6 @@ public class MenuGameController : MonoBehaviour
             pauseScreen.SetActive(false);
             Time.timeScale = timeScale;
             Debug.Log("Pause");
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
         }
         else
         {
@@ -102,9 +98,6 @@ public class MenuGameController : MonoBehaviour
             pauseScreen.SetActive(true);
             timeScale = Time.timeScale;
             Time.timeScale = 0;
-
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
         }
     }
 

@@ -231,9 +231,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95e16e1cf57461746812a462f7bbf53c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  titleScreen: {fileID: 0}
-  optionScreen: {fileID: 0}
-  pauseScreen: {fileID: 0}
+  titleScreen: {fileID: 278227678}
+  pauseScreen: {fileID: 535938123}
 --- !u!4 &266098788
 Transform:
   m_ObjectHideFlags: 0

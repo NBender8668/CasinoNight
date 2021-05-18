@@ -7,7 +7,7 @@ using UnityEngine;
 public class DeckOfCards : MonoBehaviour
 {
     System.Random random = new System.Random();
-    private List<Card> cards = new List<Card>();
+    public List<Card> cards = new List<Card>();
 
     public DeckOfCards()
     {
