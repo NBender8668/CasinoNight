@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Poker.unity
     guid: 63fe3af47cf91df4fbe83e05982f0439
+  - enabled: 1
+    path: Assets/Scenes/Craps.unity
+    guid: 86640be144309b5499b175be0c1523cd
+  - enabled: 1
+    path: Assets/Scenes/Roulette.unity
+    guid: f75898c2a11eeeb46b8362544c907272
   m_configObjects: {}
