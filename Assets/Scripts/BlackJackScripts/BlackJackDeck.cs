@@ -10,7 +10,7 @@ public class BlackJackDeck : MonoBehaviour
   
     void Start()
     {
-        
+        GetCardValues();
     }
 
     void GetCardValues()
