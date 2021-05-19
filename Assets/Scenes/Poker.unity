@@ -1808,11 +1808,6 @@ MonoBehaviour:
   cardThreeBtn: {fileID: 114857698}
   cardFourBtn: {fileID: 1954484479}
   cardFiveBtn: {fileID: 1378347561}
-  cardOne: {fileID: 0}
-  cardTwo: {fileID: 0}
-  cardThree: {fileID: 0}
-  cardFour: {fileID: 0}
-  cardFive: {fileID: 0}
 --- !u!4 &1369573552
 Transform:
   m_ObjectHideFlags: 0
