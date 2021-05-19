@@ -12,22 +12,20 @@ public class DealingCards : MonoBehaviour
     public Button cardFourBtn;
     public Button cardFiveBtn;
 
-    DeckOfCards deck;
+    DeckOfCards deck = new DeckOfCards();
     PokerManager pokerManager;
 
     public List<Card> cards = new List<Card>();
     public void Start()
     {
-        pokerManager = GetComponent<PokerManager>();
-        deck = GetComponent<DeckOfCards>();
-
+        
     }
 
 
     public void DealCards()
     {
         
-        //pokerManager.shuffle();
+        deck.shuffle();
 
         Card cardOne;
         Card cardTwo;
