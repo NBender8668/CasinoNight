@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
 
     private void DealClicked()
     {
-        GameObject.Find("DeckController").GetComponent<DeckOfCards>().shuffle();
+        GameObject.Find("DeckController").GetComponent<BlackJackDeck>().Shuffle();
         playerScript.StartHand();
         dealerScript.StartHand();
     }
