@@ -6,6 +6,62 @@ using UnityEngine.UI;
 
 public class DealingCards : MonoBehaviour
 {
+    public Sprite cardClubs2;
+    public Sprite cardClubs3;
+    public Sprite cardClubs4;
+    public Sprite cardClubs5;
+    public Sprite cardClubs6;
+    public Sprite cardClubs7;
+    public Sprite cardClubs8;
+    public Sprite cardClubs9;
+    public Sprite cardClubs10;
+    public Sprite cardClubsA;
+    public Sprite cardClubsJ;
+    public Sprite cardClubsK;
+    public Sprite cardClubsQ;
+
+    public Sprite cardDiamonds2;
+    public Sprite cardDiamonds3;
+    public Sprite cardDiamonds4;
+    public Sprite cardDiamonds5;
+    public Sprite cardDiamonds6;
+    public Sprite cardDiamonds7;
+    public Sprite cardDiamonds8;
+    public Sprite cardDiamonds9;
+    public Sprite cardDiamonds10;
+    public Sprite cardDiamondsA;
+    public Sprite cardDiamondsJ;
+    public Sprite cardDiamondsK;
+    public Sprite cardDiamondsQ;
+
+    public Sprite cardHearts2;
+    public Sprite cardHearts3;
+    public Sprite cardHearts4;
+    public Sprite cardHearts5;
+    public Sprite cardHearts6;
+    public Sprite cardHearts7;
+    public Sprite cardHearts8;
+    public Sprite cardHearts9;
+    public Sprite cardHearts10;
+    public Sprite cardHeartsA;
+    public Sprite cardHeartsJ;
+    public Sprite cardHeartsK;
+    public Sprite cardHeartsQ;
+
+    public Sprite cardSpades2;
+    public Sprite cardSpades3;
+    public Sprite cardSpades4;
+    public Sprite cardSpades5;
+    public Sprite cardSpades6;
+    public Sprite cardSpades7;
+    public Sprite cardSpades8;
+    public Sprite cardSpades9;
+    public Sprite cardSpades10;
+    public Sprite cardSpadesA;
+    public Sprite cardSpadesJ;
+    public Sprite cardSpadesK;
+    public Sprite cardSpadesQ;
+
     public Button cardOneBtn;
     public Button cardTwoBtn;
     public Button cardThreeBtn;
@@ -13,8 +69,14 @@ public class DealingCards : MonoBehaviour
     public Button cardFiveBtn;
 
     DeckOfCards deck = new DeckOfCards();
-    PokerManager pokerManager;
+    //PokerManager pokerManager;
+    Card card;
 
+    Card cardOne;
+    Card cardTwo;
+    Card cardThree;
+    Card cardFour;
+    Card cardFive;
     public List<Card> cards = new List<Card>();
     public void Start()
     {
@@ -27,11 +89,6 @@ public class DealingCards : MonoBehaviour
         
         deck.shuffle();
 
-        Card cardOne;
-        Card cardTwo;
-        Card cardThree;
-        Card cardFour;
-        Card cardFive;
 
         System.Random randomCard = new System.Random();
         System.Random randomCard2 = new System.Random();
@@ -65,5 +122,22 @@ public class DealingCards : MonoBehaviour
         cards.Add(cardFour);
         cards.Add(cardFive);
 
+    }
+
+    public void PutImageOnCard()
+    {
+        if (cards[0] != new Card(1, Card.eSuit.Hearts))
+        {
+            cardOneBtn.GetComponent<Image>().sprite = cardHeartsA;
+        }
+    }
+
+    public void TestIfCardImageChange()
+    {
+        card = new Card(1, Card.eSuit.Hearts);
+        cardOne = card;
+        cards.Add(cardOne);
+
+        PutImageOnCard();
     }
 }

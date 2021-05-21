@@ -8,6 +8,7 @@ public class DeckOfCards
 {
     System.Random random = new System.Random();
     public List<Card> cards = new List<Card>();
+    public Card card;
 
     public DeckOfCards()
     {
