@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class DealingCards : MonoBehaviour
 {
+    private Image cardFace;
+
     public Sprite cardClubs2;
     public Sprite cardClubs3;
     public Sprite cardClubs4;
@@ -43,7 +45,7 @@ public class DealingCards : MonoBehaviour
     public Sprite cardHearts8;
     public Sprite cardHearts9;
     public Sprite cardHearts10;
-    public Sprite cardHeartsA;
+    public Image cardHeartsA;
     public Sprite cardHeartsJ;
     public Sprite cardHeartsK;
     public Sprite cardHeartsQ;
@@ -80,15 +82,13 @@ public class DealingCards : MonoBehaviour
     public List<Card> cards = new List<Card>();
     public void Start()
     {
-        
+        cardFace = cardOneBtn.GetComponent<Image>();
     }
 
 
     public void DealCards()
-    {
-        
+    {        
         deck.shuffle();
-
 
         System.Random randomCard = new System.Random();
         System.Random randomCard2 = new System.Random();
@@ -128,7 +128,7 @@ public class DealingCards : MonoBehaviour
     {
         if (cards[0] != new Card(1, Card.eSuit.Hearts))
         {
-            cardOneBtn.GetComponent<Image>().sprite = cardHeartsA;
+            cardFace = cardHeartsA;
         }
     }
 
