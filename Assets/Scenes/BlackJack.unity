@@ -536,6 +536,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 348180941}
+  - component: {fileID: 348180942}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -559,6 +560,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &348180942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348180940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e1c0ec23db97764cb3b873f9871cccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardScript: {fileID: 1985204919}
+  blackJackDeck: {fileID: 1243751659}
+  handValue: 0
+  hand:
+  - {fileID: 1985204915}
+  - {fileID: 941768824}
+  cardIndex: 0
 --- !u!1 &361624396
 GameObject:
   m_ObjectHideFlags: 0
@@ -3301,6 +3321,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1985204916}
   - component: {fileID: 1985204917}
+  - component: {fileID: 1985204918}
+  - component: {fileID: 1985204919}
   m_Layer: 0
   m_Name: Card1
   m_TagString: Untagged
@@ -3373,6 +3395,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1985204918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985204915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e1c0ec23db97764cb3b873f9871cccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardScript: {fileID: 0}
+  blackJackDeck: {fileID: 0}
+  handValue: 0
+  hand: []
+  cardIndex: 0
+--- !u!114 &1985204919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985204915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cd48b2bc53fa3488dec342685e52b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 0
 --- !u!1 &2013800185
 GameObject:
   m_ObjectHideFlags: 0
