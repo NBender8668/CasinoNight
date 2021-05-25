@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 
-public class DeckOfCards : MonoBehaviour
+public class DeckOfCards
 {
     System.Random random = new System.Random();
     public List<Card> cards = new List<Card>();
+    public Card card;
 
     public DeckOfCards()
     {
@@ -22,7 +23,7 @@ public class DeckOfCards : MonoBehaviour
 
     public void shuffle()
     {
-        for(int i = cards.Count - 1; i > 0; i--)
+        for (int i = cards.Count - 1; i > 0; i--)
         {
             var temp = cards[i];
             var index = random.Next(0, i + 1);
@@ -30,5 +31,6 @@ public class DeckOfCards : MonoBehaviour
             cards[index] = temp;
         }
     }
+
 }
 

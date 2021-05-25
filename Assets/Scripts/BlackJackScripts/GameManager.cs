@@ -10,6 +10,11 @@ public class GameManager : MonoBehaviour
     public Button hitButton;
     public Button standButton;
     public Button betButton;
+
+    // Access the player and dealers
+    public PlayerScript playerScript;
+    public PlayerScript dealerScript;
+
     void Start()
     {
         // Add on click listeners to the buttons
@@ -18,16 +23,11 @@ public class GameManager : MonoBehaviour
         standButton.onClick.AddListener(() => StandClicked());
     }
 
-    
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void DealClicked()
     {
-        throw new NotImplementedException();
+        GameObject.Find("DeckController").GetComponent<BlackJackDeck>().Shuffle();
+        playerScript.StartHand();
+        dealerScript.StartHand();
     }
     private void HitClicked()
     {
