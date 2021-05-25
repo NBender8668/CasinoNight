@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DealingCards : MonoBehaviour
+public class DealingCards
 {
     private Sprite cardFace;
     private Sprite cardFace2;
@@ -132,7 +132,7 @@ public class DealingCards : MonoBehaviour
 
     }
 
-    public void PutImageOnCard_OnClick()
+    public void PutImageOnCard()
     {
         if (cards[0] != new Card(1, Card.eSuit.Hearts))
         {
