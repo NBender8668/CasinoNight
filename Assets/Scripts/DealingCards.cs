@@ -6,7 +6,11 @@ using UnityEngine.UI;
 
 public class DealingCards : MonoBehaviour
 {
-    private Image cardFace;
+    private Sprite cardFace;
+    private Sprite cardFace2;
+    private Sprite cardFace3;
+    private Sprite cardFace4;
+    private Sprite cardFace5;
 
     public Sprite cardClubs2;
     public Sprite cardClubs3;
@@ -45,7 +49,7 @@ public class DealingCards : MonoBehaviour
     public Sprite cardHearts8;
     public Sprite cardHearts9;
     public Sprite cardHearts10;
-    public Image cardHeartsA;
+    public Sprite cardHeartsA;
     public Sprite cardHeartsJ;
     public Sprite cardHeartsK;
     public Sprite cardHeartsQ;
@@ -82,7 +86,11 @@ public class DealingCards : MonoBehaviour
     public List<Card> cards = new List<Card>();
     public void Start()
     {
-        cardFace = cardOneBtn.GetComponent<Image>();
+        cardFace = cardOneBtn.GetComponent<Image>().sprite;
+        cardFace2 = cardTwoBtn.GetComponent<Image>().sprite;
+        cardFace3 = cardThreeBtn.GetComponent<Image>().sprite;
+        cardFace4 = cardFourBtn.GetComponent<Image>().sprite;
+        cardFace5 = cardFiveBtn.GetComponent<Image>().sprite;
     }
 
 
@@ -124,11 +132,31 @@ public class DealingCards : MonoBehaviour
 
     }
 
-    public void PutImageOnCard()
+    public void PutImageOnCard_OnClick()
     {
         if (cards[0] != new Card(1, Card.eSuit.Hearts))
         {
             cardFace = cardHeartsA;
+        }
+
+        if (cards[1] != new Card(1, Card.eSuit.Hearts))
+        {
+            cardFace2 = cardHeartsA;
+        }
+
+        if (cards[2] != new Card(1, Card.eSuit.Hearts))
+        {
+            cardFace3 = cardHeartsA;
+        }
+
+        if (cards[3] != new Card(1, Card.eSuit.Hearts))
+        {
+            cardFace4 = cardHeartsA;
+        }
+
+        if (cards[4] != new Card(1, Card.eSuit.Hearts))
+        {
+            cardFace5 = cardHeartsA;
         }
     }
 
@@ -137,6 +165,22 @@ public class DealingCards : MonoBehaviour
         card = new Card(1, Card.eSuit.Hearts);
         cardOne = card;
         cards.Add(cardOne);
+
+        card = new Card(1, Card.eSuit.Hearts);
+        cardTwo = card;
+        cards.Add(cardTwo);
+
+        card = new Card(1, Card.eSuit.Hearts);
+        cardThree = card;
+        cards.Add(cardThree);
+
+        card = new Card(1, Card.eSuit.Hearts);
+        cardFour = card;
+        cards.Add(cardFour);
+
+        card = new Card(1, Card.eSuit.Hearts);
+        cardFive = card;
+        cards.Add(cardFive);
 
         PutImageOnCard();
     }
