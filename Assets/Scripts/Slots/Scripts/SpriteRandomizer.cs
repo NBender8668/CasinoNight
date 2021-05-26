@@ -17,8 +17,6 @@ public class SpriteRandomizer : MonoBehaviour
     void RandomSprite()
     {
         gameObject.GetComponent<UnityEngine.UI.Image>().sprite = sprites[Random.Range(0, sprites.Length)];
-
-        
     }
 
     void EndRand()
