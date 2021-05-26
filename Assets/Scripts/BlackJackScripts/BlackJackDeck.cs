@@ -36,7 +36,7 @@ public class BlackJackDeck : MonoBehaviour
     public void Shuffle()
     {
         // standard array data swapping technique
-        for (int i = cardSprites.Length -1; i > 0; i++)
+        for (int i = cardSprites.Length -1; i > 0; i--)
         {
             int j = Mathf.FloorToInt(Random.Range(0.0f, 1.0f) * cardSprites.Length - 1) + 1;
             Sprite face = cardSprites[i];

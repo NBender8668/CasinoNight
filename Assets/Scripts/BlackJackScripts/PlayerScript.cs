@@ -20,7 +20,6 @@ public class PlayerScript : MonoBehaviour
     public GameObject[] hand;
     //Index of next card to be turned over
     public int cardIndex = 0;
-    //public int aceCount = 0;
     // Track aces for 1 to 11 conversions
     List<CardScript> aceList = new List<CardScript>();
 

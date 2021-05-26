@@ -23,9 +23,9 @@ public class GameManager : MonoBehaviour
         standButton.onClick.AddListener(() => StandClicked());
     }
 
-    private void DealClicked()
+    public void DealClicked()
     {
-        GameObject.Find("DeckController").GetComponent<BlackJackDeck>().Shuffle();
+        GameObject.Find("Deck").GetComponent<BlackJackDeck>().Shuffle();
         playerScript.StartHand();
         dealerScript.StartHand();
     }
