@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DealingCards
+public class DealingCards : MonoBehaviour
 {
     private Sprite cardFace;
     private Sprite cardFace2;
