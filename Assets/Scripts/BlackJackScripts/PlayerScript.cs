@@ -44,9 +44,55 @@ public class PlayerScript : MonoBehaviour
             aceList.Add(hand[cardIndex].GetComponent<CardScript>());
         }
         //Check if we should use an 11 instead of a 1
-        //AceCheck()
+        AceCheck();
         cardIndex++;
         return handValue;
-        
+    }
+
+    public void AceCheck()
+    {
+        foreach (CardScript ace in aceList)
+        {
+            if (handValue + 10 < 22 && ace.GetValueOfCard() == 1)
+            {
+                // if converting, adjust card object value and hand
+                ace.SetValue(11);
+                handValue += 10;
+            }
+            else if(handValue > 21 && ace.GetValueOfCard() == 11)
+            {
+                // if converting, adjust gameobject value and value
+
+                ace.SetValue(1);
+                handValue -= 10;
+            }
+        }
+    }
+
+
+    // add or subtract from money, for bets
+
+    public void AdjustMoney(int amount)
+    {
+        money += amount;
+    }
+    //output players current money amount
+
+    public int GetMoney()
+    {
+        return money;
+    }
+
+    // Hides all cards, resets the needed variables
+    public void ResetHand()
+    {
+        for (int i = 0; i < hand.Length; i++)
+        {
+            hand[i].GetComponent<CardScript>().ResetCard();
+            hand[i].GetComponent<Renderer>().enabled = false;
+        }
+        cardIndex = 0;
+        handValue = 0;
+        aceList = new List<CardScript>();
     }
 }
