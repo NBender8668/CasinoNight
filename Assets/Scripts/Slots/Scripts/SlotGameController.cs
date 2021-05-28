@@ -15,15 +15,7 @@ public class SlotGameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SlotCheck();
+        
     }
 
-
-    void SlotCheck()
-    {
-       if(slots[0].sprites[0].name == "Banana"&& slots[1].sprites[0].name == "Banana")
-        {
-
-        }
-    }
 }
