@@ -249,7 +249,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 70315210}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1235737656}
+        m_TargetAssemblyTypeName: BettingController, Assembly-CSharp
+        m_MethodName: BetFiveHundredChips
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &70315210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,7 +755,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 265849085}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1235737656}
+        m_TargetAssemblyTypeName: BettingController, Assembly-CSharp
+        m_MethodName: BetFiveKChips
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &265849085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1078,7 +1102,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 319638447}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1235737656}
+        m_TargetAssemblyTypeName: BettingController, Assembly-CSharp
+        m_MethodName: BetTenChips
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &319638447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1360,7 +1396,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1544,7 +1580,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 586219673}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1235737656}
+        m_TargetAssemblyTypeName: BettingController, Assembly-CSharp
+        m_MethodName: BetFiftyChips
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &586219673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2008,7 +2056,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 855327975}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1235737656}
+        m_TargetAssemblyTypeName: BettingController, Assembly-CSharp
+        m_MethodName: BetOneKChips
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &855327975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2771,6 +2831,62 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5353436, y: 0.14569594, z: 1}
   m_Center: {x: 0.0018265331, y: 0.37178022, z: 0}
+--- !u!1 &1235737655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1235737657}
+  - component: {fileID: 1235737656}
+  m_Layer: 0
+  m_Name: BetController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1235737656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235737655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be07acc1ec3958b41afc225eef6bb04b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentBet: 0
+  total: 10000
+  betAmount: {fileID: 1905972457}
+  totalAmount: {fileID: 1320527439}
+  betOneBtn: {fileID: 1573389885}
+  betFiveBtn: {fileID: 1484086314}
+  betTenBtn: {fileID: 319638446}
+  betTwentyBtn: {fileID: 1343044622}
+  betFiftyBtn: {fileID: 586219672}
+  betOneHundredBtn: {fileID: 1802826531}
+  betFiveHundredBtn: {fileID: 70315209}
+  betOneKBtn: {fileID: 855327974}
+  betFiveKBtn: {fileID: 265849084}
+--- !u!4 &1235737657
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235737655}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 423.41022, y: 165.94267, z: -36.62994}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1237327442
 GameObject:
   m_ObjectHideFlags: 0
@@ -3004,7 +3120,7 @@ GameObject:
   - component: {fileID: 1320527440}
   - component: {fileID: 1320527439}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TotalAmount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3153,7 +3269,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1343044623}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1235737656}
+        m_TargetAssemblyTypeName: BettingController, Assembly-CSharp
+        m_MethodName: BetTwentyChips
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1343044623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3548,7 +3676,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1484086315}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1235737656}
+        m_TargetAssemblyTypeName: BettingController, Assembly-CSharp
+        m_MethodName: BetFiveChips
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1484086315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3713,7 +3853,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1573389886}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1235737656}
+        m_TargetAssemblyTypeName: BettingController, Assembly-CSharp
+        m_MethodName: BetOneChip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1573389886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3762,6 +3914,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1628108197}
   - component: {fileID: 1628108198}
+  - component: {fileID: 1628108199}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -3834,6 +3987,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1628108199
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628108196}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1632502531
 GameObject:
   m_ObjectHideFlags: 0
@@ -4127,7 +4306,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1802826532}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1235737656}
+        m_TargetAssemblyTypeName: BettingController, Assembly-CSharp
+        m_MethodName: BetOneHundredChips
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1802826532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4510,7 +4701,7 @@ GameObject:
   - component: {fileID: 1905972458}
   - component: {fileID: 1905972457}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: BetAmount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
